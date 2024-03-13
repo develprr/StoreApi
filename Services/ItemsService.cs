@@ -3,6 +3,8 @@ using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
 
+namespace StoreApi.Services;
+
 public class ItemsService
 {
     private readonly IMongoCollection<Item> _itemsCollection;
