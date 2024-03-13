@@ -1,9 +1,7 @@
 using StoreApi.Models;
-using StoreApi.Services;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
-namespace StoreApi.Services;
 
 public class ItemsService
 {

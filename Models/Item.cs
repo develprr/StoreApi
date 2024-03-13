@@ -5,7 +5,7 @@
 
     namespace StoreApi.Models;
 
-    public class StoreApi
+    public class Item
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]

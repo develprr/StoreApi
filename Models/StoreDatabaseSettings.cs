@@ -1,4 +1,4 @@
-namespace Store.Models;
+namespace StoreApi.Models;
 
 public class StoreDatabaseSettings
 {
