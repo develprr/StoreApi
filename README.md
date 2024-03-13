@@ -5,7 +5,7 @@ This project was implemented by combining and applying instructions provided by 
 
 * [TodoApi tutorial](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-8.0&amp;tabs=visual-studio-code)
 * [Bookstore API with MongoDB tutorial](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mongo-app)
-* [Swagger](https://learn.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-8.0)
+* [Swagger ASP.NET tutorial](https://learn.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-8.0)
 
 The API's name is just StoreApi, not BookStoreApi, not PetshopApi,
 nothing like that. Just boringly, plainly and simply "StoreApi". 
