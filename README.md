@@ -9,5 +9,4 @@ This project was implemented by combining and applying instructions provided by 
 
 The API's name is just StoreApi, not BookStoreApi, not PetshopApi,
 nothing like that. Just boringly, plainly and simply "StoreApi". 
-
 It's just because I don't have the slightest idea what I should be selling in my store! :)
