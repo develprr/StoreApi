@@ -3,7 +3,7 @@
 ## Description
 
 This is a demo API showcasing an ASP.NET based online web store API that uses MongoDB as its database to store items.
-The API's name is not BookStoreApi, not PetshopApi lime in typical examples. Instead, just boringly and simply "StoreApi".
+The API's name is not BookStoreApi, not PetshopApi like in typical examples. Instead, just boringly and simply "StoreApi".
 This is because I don't have the slightest idea what I should sell in my store :)
 
 ## Sources
