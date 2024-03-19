@@ -6,5 +6,5 @@ public class StoreDatabaseSettings
 
     public string DatabaseName { get; set; } = null!;
 
-    public string ItemsCollectionName { get; set; } = null!;
+    public string ProductsCollectionName { get; set; } = null!;
 }

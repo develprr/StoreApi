@@ -8,19 +8,19 @@ namespace StoreApi.Controllers;
 [Route("api/[controller]")]
 public class ItemsController : ControllerBase
 {
-    private readonly ItemsService _itemsService;
+    private readonly ProductsService _productsService;
 
-    public ItemsController(ItemsService itemsService) =>
-        _itemsService = itemsService;
+    public ItemsController(ProductsService productsService) =>
+        _productsService = productsService;
 
     [HttpGet]
-    public async Task<List<Item>> Get() =>
-        await _itemsService.GetAsync();
+    public async Task<List<Product>> Get() =>
+        await _productsService.GetAsync();
 
     [HttpGet("{id:length(24)}")]
-    public async Task<ActionResult<Item>> Get(string id)
+    public async Task<ActionResult<Product>> Get(string id)
     {
-        var item = await _itemsService.GetAsync(id);
+        var item = await _productsService.GetAsync(id);
 
         if (item is null)
         {
@@ -31,17 +31,17 @@ public class ItemsController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<IActionResult> Post(Item newItem)
+    public async Task<IActionResult> Post(Product newProduct)
     {
-        await _itemsService.CreateAsync(newItem);
+        await _productsService.CreateAsync(newItem);
 
         return CreatedAtAction(nameof(Get), new { id = newItem.Id }, newItem);
     }
 
     [HttpPut("{id:length(24)}")]
-    public async Task<IActionResult> Update(string id, Item updatedItem)
+    public async Task<IActionResult> Update(string id, Product updatedItem)
     {
-        var item = await _itemsService.GetAsync(id);
+        var item = await _productsService.GetAsync(id);
 
         if (item is null)
         {
@@ -50,7 +50,7 @@ public class ItemsController : ControllerBase
 
         updatedItem.Id = item.Id;
 
-        await _itemsService.UpdateAsync(id, updatedItem);
+        await _productsService.UpdateAsync(id, updatedItem);
 
         return NoContent();
     }
@@ -58,14 +58,14 @@ public class ItemsController : ControllerBase
     [HttpDelete("{id:length(24)}")]
     public async Task<IActionResult> Delete(string id)
     {
-        var item = await _itemsService.GetAsync(id);
+        var item = await _productsService.GetAsync(id);
 
         if (item is null)
         {
             return NotFound();
         }
 
-        await _itemsService.RemoveAsync(id);
+        await _productsService.RemoveAsync(id);
 
         return NoContent();
     }

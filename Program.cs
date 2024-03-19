@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.Configure<StoreDatabaseSettings>(
     builder.Configuration.GetSection("StoreDatabase"));
-builder.Services.AddSingleton<ItemsService>();
+builder.Services.AddSingleton<ProductsService>();
 
 
 builder.Services.AddControllers();
