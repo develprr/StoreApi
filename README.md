@@ -2,7 +2,7 @@
 
 ## Description
 This branch contains an upgraded version of the Store API introduced in the previous branch 
-[step-0-initial-implementation](https://github.com/develprr/StoreApi/tree/step-0-initial-implementation)
+[step-0-initial-implementation](https://github.com/develprr/StoreApi/tree/step-0-initial-implementation).
 
 In this example, our imaginary entrepreneur's business idea has somewhat evolved and he has now figured out 
 that he wants to be selling food in his store. 
