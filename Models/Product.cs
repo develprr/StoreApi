@@ -1,4 +1,3 @@
-
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
@@ -10,14 +9,13 @@ public class Product
     [BsonRepresentation(BsonType.ObjectId)]
     public string? Id { get; set; }
 
-    [BsonElement("Name")]
     public string CustomerId { get; set; } = null!;
 
-    public decimal Category { get; set; }
+    public string Category { get; set; } = null!;
 
-    public decimal Name { get; set; }
+    public string Name { get; set; } = null!;
 
-    public string Quantity { get; set; } = null!;
+    public int Quantity { get; set; } = 0;
 
 }
 

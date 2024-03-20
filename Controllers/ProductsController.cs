@@ -6,11 +6,11 @@ namespace StoreApi.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class ItemsController : ControllerBase
+public class ProductsController : ControllerBase
 {
     private readonly ProductsService _productsService;
 
-    public ItemsController(ProductsService productsService) =>
+    public ProductsController(ProductsService productsService) =>
         _productsService = productsService;
 
     [HttpGet]
@@ -33,9 +33,8 @@ public class ItemsController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Post(Product newProduct)
     {
-        await _productsService.CreateAsync(newItem);
-
-        return CreatedAtAction(nameof(Get), new { id = newItem.Id }, newItem);
+        await _productsService.CreateAsync(newProduct);
+        return CreatedAtAction(nameof(Get), new { id = newProduct.Id }, newProduct);
     }
 
     [HttpPut("{id:length(24)}")]

@@ -31,6 +31,7 @@ This project was implemented by combining and applying instructions provided by 
 ## Instructions
 ### Create a resource group
 First, create resource group in Azure to serve as the basement for your MongoDb in Cosmos DB:
+
 ```
 az group create \
     --name foodStoreRG \
@@ -57,11 +58,11 @@ List available connection strings for your database:
 ```
  az cosmosdb keys list --type connection-strings \
       --resource-group foodStoreRG \
-      --name food-store-2024-03-19
+      --name food-store-2024-03-20
 ```
 
-Then, take the primary connection string (the first one on the list) and 
-set it to the environment variable COSMOS_CONNECTION_STRING.
+Then, take the primary connection string (the first one on the list) and
+update connectionString variable accordingly in your appsettings.json file. 
 
 If you are using a native Linux or a Linux subsystem on Windows,
 you can edit .bashrc file and addd the connection string as a global variable:

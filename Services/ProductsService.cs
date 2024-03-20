@@ -17,7 +17,7 @@ public class ProductsService
         var mongoDatabase = mongoClient.GetDatabase(
             StoreDatabaseSettings.Value.DatabaseName);
 
-        _productsCollection = mongoDatabase.GetCollection<Item>(
+        _productsCollection = mongoDatabase.GetCollection<Product>(
             StoreDatabaseSettings.Value.ProductsCollectionName);
     }
 

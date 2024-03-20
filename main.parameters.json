@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
       "accountName": {
-        "value": "food-store-2024-03-19"
+        "value": "food-store-2024-03-20"
       },
       "primaryRegion": {
         "value": "useast"
