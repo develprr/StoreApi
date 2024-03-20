@@ -1,15 +1,22 @@
-# StoreApi
+# Food Store API
 
 ## Description
-This is a demo API showcasing an ASP.NET based online web store API that uses MongoDB as its database to store items.
-The API's name is not BookStoreApi or PetShopApi like in typical examples. Instead, it's just boringly and simply "StoreApi".
+This branch contains an upgraded version of the Store API introduced in the previous branch 
+```step-0-initial-implementation```.
 
-In this initial implementation, the application only works in the localhost and provides a simple web API (without authentication)
-to access a locally hosted MongoDB instance. It does not provide tools for configuring the MongoDB but assumes
-that all configurations are done "manually" using Mongo CLI.
+In this example, our imaginary entrepreneurs business idea has somewhat evolved and the entrepreneur
+has now figured out that he wants to be selling food on his store. 
+
+Therefore, the code structures that were previously related to handling just "items", have been now
+refactored to handle "products". 
+
+We have taken this implementation also technically one step forward. As the previous implementation
+only worked with a locally configured MongoDB, this version contains a Bicep file allowing
+to automatically create a MongoDB instance to Cosmos DB in Azure.
+
+Please read this document further to see how to use the accompanied Bicep file to configure your food store database in Azure.
 
 ## Sources
-
 This project was implemented by combining and applying instructions provided by the following tutorials:
 
 * [TodoApi tutorial](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-8.0&amp;tabs=visual-studio-code)
@@ -64,9 +71,6 @@ List available connection strings for your database:
 Then, take the primary connection string (the first one on the list) and
 update connectionString variable accordingly in your appsettings.json file. 
 
-If you are using a native Linux or a Linux subsystem on Windows,
-you can edit .bashrc file and addd the connection string as a global variable:
-
 ```
 export COSMOS_CONNECTION_STRING="<your-connection-string-here>"
 ```
@@ -86,7 +90,6 @@ Swagger URL:
 ```
 https://localhost:7097
 ```
-
 
 ### Clean up
 To remove the resource grup from Azure (and your MongoDB within):
