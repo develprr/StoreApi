@@ -2,15 +2,14 @@
 
 ## Description
 This branch contains an upgraded version of the Store API introduced in the previous branch 
-```step-0-initial-implementation```.
+[step-0-initial-implementation](https://github.com/develprr/StoreApi/tree/step-0-initial-implementation)
 
-In this example, our imaginary entrepreneurs business idea has somewhat evolved and the entrepreneur
-has now figured out that he wants to be selling food on his store. 
+In this example, our imaginary entrepreneur's business idea has somewhat evolved and he has now figured out 
+that he wants to be selling food in his store. 
 
-Therefore, the code structures that were previously related to handling just "items", have been now
-refactored to handle "products". 
+Therefore he has updated the code structures related to handling "items" to handle "products" instead. 
 
-We have taken this implementation also technically one step forward. As the previous implementation
+The entrepreneur has also taken the techinal implementation of the API one step forward. As the previous implementation
 only worked with a locally configured MongoDB, this version contains a Bicep file allowing
 to automatically create a MongoDB instance to Cosmos DB in Azure.
 
@@ -94,7 +93,7 @@ https://localhost:7097
 ### Clean up
 To remove the resource grup from Azure (and your MongoDB within):
 ```
-az group delete --name exampleRG
+az group delete --name foodStoreRG
 ```
 
 
