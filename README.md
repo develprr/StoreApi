@@ -5,9 +5,7 @@ This branch contains an upgraded version of the Store API introduced in the prev
 [step-0-initial-implementation](https://github.com/develprr/StoreApi/tree/step-0-initial-implementation).
 
 In this example, our imaginary entrepreneur's business idea has somewhat evolved and he has now figured out 
-that he wants to be selling food in his store. 
-
-Therefore he has updated the code structures related to handling "items" to handle "products" instead. 
+that he wants to be selling food in his store. Therefore he has updated the code structures related to handling "items" to handle "products" instead. 
 
 The entrepreneur has also taken the techinal implementation of the API one step forward. As the previous implementation
 only worked with a locally configured MongoDB, this version contains a Bicep file allowing
