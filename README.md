@@ -68,10 +68,6 @@ List available connection strings for your database:
 Then, take the primary connection string (the first one on the list) and
 update connectionString variable accordingly in your appsettings.json file. 
 
-```
-export COSMOS_CONNECTION_STRING="<your-connection-string-here>"
-```
-
 ### Build and run the API
 
 Build:
