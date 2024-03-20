@@ -7,7 +7,7 @@ This branch contains an upgraded version of the Store API introduced in the prev
 In this example, our imaginary entrepreneur's business idea has somewhat evolved and he has now figured out 
 that he wants to be selling food in his store. Therefore he has updated the code structures related to handling "items" to handle "products" instead. 
 
-The entrepreneur has also taken the techinal implementation of the API one step forward. As the previous implementation
+The entrepreneur has also taken the technical implementation of the API one step forward. As the previous implementation
 only worked with a locally configured MongoDB, this version contains a Bicep file allowing
 to automatically create a MongoDB instance to Cosmos DB in Azure.
 
