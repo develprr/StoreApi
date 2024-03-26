@@ -48,6 +48,8 @@ To be sure that you successfully created a resource group, type:
 az group list
 ```
 The group that you created should be listed now in the output.
+![az group list](https://github.com/develprr/metamatic-blog/blob/gh-pages/assets/az-group-list.gif)
+
 
 ### Create a MongoDB in Cosmos DB
 Then, create a MongoDB instance in Cosmos DB with some collections, "products" and "customers":
