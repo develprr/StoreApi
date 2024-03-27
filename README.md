@@ -35,4 +35,4 @@ Swagger URL:
 ```
 https://localhost:7097
 ```
-![build-and-run-store-api](https://github.com/develprr/StoreApi/tree/main/Resources/build-and-run-store-api.gif)
+![build-and-run-store-api](https://github.com/develprr/StoreApi/blob/main/Resources/build-and-run-store-api.gif)
