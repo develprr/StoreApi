@@ -36,11 +36,3 @@ Swagger URL:
 https://localhost:7097
 ```
 ![build-and-run-store-api](https://github.com/develprr/StoreApi/tree/main/Resources/build-and-run-store-api.gif)
-
-### Clean up
-To remove the resource grup from Azure (and your MongoDB within):
-```
-az group delete --name foodStoreRG
-```
-
-
