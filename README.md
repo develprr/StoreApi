@@ -57,6 +57,7 @@ Then, create a MongoDB instance in Cosmos DB with some collections, "products" a
 ```
 az deployment group create --resource-group foodStoreRG --template-file 'main.bicep' --parameters main.parameters.json
 ```
+![az-deployment-group-create-resource-group-food-store](https://github.com/develprr/metamatic-blog/blob/gh-pages/assets/az-deployment-group-create-resource-group-food-store.gif)
 
 ### Find and update MongoDB connection string
 To connect to MongoDB API, you need to find the connection string for the database that you just created.
