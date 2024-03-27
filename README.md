@@ -84,7 +84,7 @@ Swagger URL:
 ```
 https://localhost:7097
 ```
-![build-and-run-store-api](https://github.com/develprr/StoreApi/tree/step-1-founding-a-food-store/Resources/build-and-run-store-api.gif)
+![build-and-run-store-api](https://github.com/develprr/StoreApi/blob/step-1-founding-a-food-store/Resources/build-and-run-store-api.gif)
 
 ### Clean up
 To remove the resource grup from Azure (and your MongoDB within):
