@@ -47,9 +47,8 @@ To be sure that you successfully created a resource group, type:
 ```
 az group list
 ```
-The group that you created should be listed now in the output.
 ![az group list](https://github.com/develprr/metamatic-blog/blob/gh-pages/assets/az-group-list.gif)
-
+The group that you created should be listed now in the output.
 
 ### Create a MongoDB in Cosmos DB
 Then, create a MongoDB instance in Cosmos DB with some collections, "products" and "customers":
@@ -85,6 +84,7 @@ Swagger URL:
 ```
 https://localhost:7097
 ```
+![build-and-run-store-api](https://github.com/develprr/StoreApi/tree/main/Resources/build-and-run-store-api.gif)
 
 ### Clean up
 To remove the resource grup from Azure (and your MongoDB within):
