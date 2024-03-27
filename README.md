@@ -41,6 +41,7 @@ az group create \
     --name foodStoreRG \
     --location eastus
 ```
+![az-group-create-food-store](https://github.com/develprr/metamatic-blog/blob/gh-pages/az-group-create-food-store.gif)
 
 ### Verify the resource group
 To be sure that you successfully created a resource group, type:
@@ -87,9 +88,8 @@ https://localhost:7097
 ![build-and-run-store-api](https://github.com/develprr/StoreApi/blob/step-1-founding-a-food-store/Resources/build-and-run-store-api.gif)
 
 ### Clean up
-To remove the resource grup from Azure (and your MongoDB within):
+To remove the resource group from Azure (and your MongoDB within):
 ```
 az group delete --name foodStoreRG
 ```
-
 
