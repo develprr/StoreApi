@@ -41,7 +41,7 @@ az group create \
     --name foodStoreRG \
     --location eastus
 ```
-![az-group-create-food-store](https://github.com/develprr/metamatic-blog/blob/gh-pages/az-group-create-food-store.gif)
+![az-group-create-food-store](https://github.com/develprr/metamatic-blog/blob/gh-pages/assets/az-group-create-food-store.gif)
 
 ### Verify the resource group
 To be sure that you successfully created a resource group, type:
